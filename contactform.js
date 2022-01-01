@@ -1,15 +1,15 @@
 jQuery(document).ready(function($) {
 
-$(".ajax-contact-form").submit(function() {
+$(".form").submit(function() {
 var str = $(this).serialize();
 
 $.ajax({
 type: "POST",
-url: "http://domain.name/contact.php",
+url: "contact.php",
 data: str,
 success: function(msg) {
 if(msg == 'OK') {
-result = '<p>Ваш заказ принят</p>';
+result = '<p>We have recieved your message.<br/>We reply as soon as possible.</p>';
 $(".fields").hide();
 } else {
 result = msg;

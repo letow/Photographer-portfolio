@@ -253,12 +253,16 @@
         <div class="wrapper">
             <h2 class="title-h2 text-center">Get in Touch</h2>
             <p class="after-title text-center">Have any questions? Send me a message without hesitation</p>
-            <form class="form" action="">
-                <input class="form__input" type="text" name="name" placeholder="Your Full Name">
-                <input class="form__input" type="email" name="email" placeholder="Your Email Address">
-                <textarea class="form__textarea" name="message"  placeholder="Your Message"></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+            <div class="form-container">
+                <div class="fields">
+                    <form class="form" action="">
+                        <input class="form__input" type="text" name="name" placeholder="Your Full Name">
+                        <input class="form__input" type="email" name="email" placeholder="Your Email Address">
+                        <textarea class="form__textarea" name="message"  placeholder="Your Message"></textarea>
+                        <input type="submit" name="submit" class="form-container__btn btn" value="Send Message">
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
     <footer>
@@ -276,5 +280,10 @@
             </div>
         </div>
     </footer>
+    <script src="contactform.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
 </body>
 </html>
